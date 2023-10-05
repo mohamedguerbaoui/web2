@@ -16,12 +16,12 @@ const map = {}
 app.use((req, res, next) => {
     const operation = req.method + ' ' + req.path;
     const compteur= map[operation];
-    console.log(compteur + ' tt');
+
     if(compteur === undefined) map[operation]=0;
    // const compteur2 = map[operation];
    // map[operation]= compteur2+1;
     map[operation]+=1;
-    console.log(map);
+  
     next();
   });
 

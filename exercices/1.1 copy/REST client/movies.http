@@ -1,0 +1,22 @@
+### Read all pizzas with File variable
+@baseUrl = http://localhost:3000
+
+GET {{baseUrl}}/movies
+
+###
+GET {{baseUrl}}/movies/1
+
+
+### Create a movie
+POST {{baseUrl}}/movies
+Content-Type: application/json
+
+{
+       // "id" : 2,
+        "title" : "Spider-man à molenbeek",
+        "duration" : 1080,
+        "budget" : 1000080,
+        "link" : "Fynapur.com"
+}
+
+
